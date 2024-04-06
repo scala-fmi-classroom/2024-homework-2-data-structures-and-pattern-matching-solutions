@@ -13,7 +13,7 @@ sealed trait LazyList[+A]:
 
   def map[B](f: A => B): LazyList[B] = ???
 
-  def zip[B](that: LazyList[B]): LazyList[(A, B)] = ???
+  infix def zip[B](that: LazyList[B]): LazyList[(A, B)] = ???
 
   def toList: List[A] = ???
 
